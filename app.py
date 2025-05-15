@@ -36,6 +36,11 @@ def query_groq(messages, model="llama3-8b-8192"):
 st.sidebar.title("🛠️ Settings")
 model = st.sidebar.selectbox("Choose a model", [
     "llama3-8b-8192",
+    "llama3-8b-8192",
+    "llama3-70b-8192",
+    "llama2-7b-4096",
+    "llama2-13b-4096",
+    "llama2-70b-4096",
     "mixtral-8x7b-32768",
     "gemma-7b-it"
 ], index=0)
