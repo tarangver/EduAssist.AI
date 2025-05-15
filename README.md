@@ -42,9 +42,9 @@ streamlit run app.py
 - In "Secrets", add your `GROQ_API_KEY` if not using `.env`
 
 ## 📸 UI Preview
+
 Dark-themed chatbot interface with model selection.
 
-![Image](https://i.imgur.com/Zz4FbGx.png)
+<img src="https://github.com/tarangver/EduAssist.AI/raw/main/chatBot.png" alt="Chatbot UI Preview" width="650"/>
 
----
 Made with ❤️ by TARNG VERMA
