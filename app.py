@@ -41,8 +41,6 @@ model = st.sidebar.selectbox("Choose a model", [
     "llama2-7b-4096",
     "llama2-13b-4096",
     "llama2-70b-4096",
-    "mixtral-8x7b-32768",
-    "gemma-7b-it"
 ], index=0)
 
 st.sidebar.markdown("---")
