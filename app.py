@@ -36,25 +36,12 @@ def query_groq(messages, model="llama3-8b-8192"):
 st.sidebar.title("🛠️ Settings")
 
 model_map = {
-    # Existing models
     "Google Gemma 2 9B": "gemma2-9b-it",
     "Meta LLaMA 3 8B": "llama3-8b-8192",
     "Meta LLaMA 3 70B": "llama3-70b-8192",
-    # Additional models
     "LLaMA 3.1 8B (instant)": "llama-3.1-8b-instant",
-    "LLaMA 3.1 70B Versatile": "llama-3.1-70b-versatile",
-    "LLaMA 3.2 1B (preview)": "llama-3.2-1b-preview",
-    "LLaMA 3.2 3B (preview)": "llama-3.2-3b-preview",
-    "LLaMA 3.2 11B (preview)": "llama-3.2-11b-text-preview",
-    "LLaMA 3.2 90B (preview)": "llama-3.2-90b-text-preview",
     "LLaMA 3.3 70B (versatile)": "llama-3.3-70b-versatile",
-    "Mixtral 8B 32K": "mixtral-8x7b-32768",
     "Deepseek R1 Distill 70B": "deepseek-r1-distill-llama-70b",
-    "LLaMA 4 Maverick 17B": "groq:meta-llama/llama-4-maverick-17b-128e-instruct",
-    "LLaMA 4 Scout 17B": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
-    "Gemma 7B (deprecated)": "gemma-7b-it",
-    "Distil Whisper (ASR)": "distil-whisper-large-v3-en",
-    "LLaVA v1.5 7B Multimodal": "LLaVA-v1.5-7b-preview"
 }
 
 selected_label = st.sidebar.selectbox("Choose a model", list(model_map.keys()))
