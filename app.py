@@ -6,6 +6,7 @@ import os
 
 # ------------------- CONFIG -------------------
 st.set_page_config(page_title="EduAssist AI 🤖", layout="wide")
+st.subheader("Your 24/7 Smart Academic Assistant and AI Co-Pilot in the Classroom — Ask, Learn, Succeed with Zero Attitude 🎓🤖📈")
 
 # Load environment variables from .env file
 load_dotenv()
@@ -50,7 +51,6 @@ model = model_map[selected_label]
 st.sidebar.markdown("---")
 st.sidebar.caption("Powered by [Groq](https://groq.com) & Streamlit")
 
-st.sidebar.markdown("Made with ❤️ by **TARNG VERMA**", unsafe_allow_html=True)
 # ------------------- CHAT INITIALIZATION -------------------
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = [
