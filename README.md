@@ -10,8 +10,7 @@ EduAssist AI is an academic assistant chatbot powered by LLMs from Groq and depl
 ## 📦 Tools Used
 - Streamlit
 - Groq API (https://console.groq.com)
-- python-dotenv
-
+- Python
 ## 📁 How to Run
 
 1. Clone the repository:
