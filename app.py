@@ -35,11 +35,11 @@ def query_groq(messages, model="llama3-8b-8192"):
 # ------------------- SIDEBAR -------------------
 st.sidebar.title("🛠️ Settings")
 model = st.sidebar.selectbox("Choose a model", [
-    "Google GEMMA",
-    "META LLAMA 3",
-    "META LLAMA 3.1",
-    "META LLAMA 3.2",
-    "META LLAMA 3.3"
+    "Gemma2-9b-it": "Google GEMMA",
+    "Llama3-8b-8192": "META LLAMA 3",
+    "llama-3.1-8b-instant": "META LLAMA 3.1",
+    "Llama3-70b-8192": "META LLAMA 3.2",
+    "llama-3.3-70b-versatile": "META LLAMA 3.3"
 ], index=0)
 
 st.sidebar.markdown("---")
