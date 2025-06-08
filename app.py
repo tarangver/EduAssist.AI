@@ -6,7 +6,9 @@ import os
 
 # ------------------- CONFIG -------------------
 st.set_page_config(page_title="EduAssist AI 🤖", layout="wide")
-st.subheader("Your 24/7 Smart Academic Assistant and AI Co-Pilot in the Classroom — Ask, Learn, Succeed with Zero Attitude 🎓🤖📈")
+
+st.title("EduAssist AI 🤖")
+st.write("Your 24/7 Smart Academic Assistant and AI Co-Pilot in the Classroom — Ask, Learn, Succeed with Zero Attitude 🎓🤖📈")
 
 # Load environment variables from .env file
 load_dotenv()
