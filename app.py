@@ -34,17 +34,21 @@ def query_groq(messages, model="llama3-8b-8192"):
 
 # ------------------- SIDEBAR -------------------
 st.sidebar.title("🛠️ Settings")
-model = st.sidebar.selectbox("Choose a model", [
-    "Gemma2-9b-it": "Google GEMMA",
-    "Llama3-8b-8192": "META LLAMA 3",
-    "llama-3.1-8b-instant": "META LLAMA 3.1",
-    "Llama3-70b-8192": "META LLAMA 3.2",
-    "llama-3.3-70b-versatile": "META LLAMA 3.3"
-], index=0)
+
+model_map = {
+    "Google Gemma 7B": "gemma-7b-it",
+    "Google Gemma 9B": "gemma2-9b-it",
+    "Meta LLaMA3 70B": "llama3-70b-8192",
+    "Meta LLaMA3 8B": "llama3-8b-8192"
+}
+
+selected_label = st.sidebar.selectbox("Choose a model", list(model_map.keys()))
+model = model_map[selected_label]
 
 st.sidebar.markdown("---")
 st.sidebar.caption("Powered by [Groq](https://groq.com) & Streamlit")
 
+st.sidebar.markdown("Made with ❤️ by **TARNG VERMA**", unsafe_allow_html=True)
 # ------------------- CHAT INITIALIZATION -------------------
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = [
