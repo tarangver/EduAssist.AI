@@ -7,9 +7,6 @@ import os
 # ------------------- CONFIG -------------------
 st.set_page_config(page_title="EduAssist AI 🤖", layout="wide")
 
-st.title("EduAssist AI 🤖")
-st.write("Your 24/7 Smart Academic Assistant and AI Co-Pilot in the Classroom — Ask, Learn, Succeed with Zero Attitude 🎓🤖📈")
-
 # Load environment variables from .env file
 load_dotenv()
 
@@ -60,7 +57,8 @@ if "chat_history" not in st.session_state:
     ]
 
 # ------------------- CHAT UI -------------------
-st.title("📚 EduAssist AI")
+st.title("📚🤖 EduAssist AI")
+st.write("Your 24/7 Smart Academic Assistant and AI Co-Pilot in the Classroom — Ask, Learn, Succeed with Zero Attitude 🎓📈")
 
 for message in st.session_state.chat_history[1:]:  # Skip system prompt
     with st.chat_message(message["role"]):
